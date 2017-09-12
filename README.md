@@ -1,6 +1,6 @@
 # `german_normalize`
 
-Python module to normalize ä ü ö ß -> a(e) u(e) o(e) ss.
+Python module to normalize ä ü ö ß -> a(e) u(e) o(e) ss (DIN 5007).
 
 Supports both Python 2 and 3.
 
