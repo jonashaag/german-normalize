@@ -10,3 +10,7 @@ def test_non_lexicographic():
 def test_lexicographic():
     assert normalize(
         u'Naïve Café üäöß ẞ', lexicographic=True) == 'Naive Cafe uaoss SS'
+
+def test_heuristic_case():
+    assert normalize(u'Äpfel SOẞE') == 'AEpfel SOSSE'
+    assert normalize(u'Äpfel SOẞE', heuristic_case=True) == 'Aepfel SOSSE'

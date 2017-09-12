@@ -3,7 +3,7 @@ from distutils.core import setup
 
 setup(
     name='german_normalize',
-    version='1',
+    version='1.1',
     author='Jonas Haag',
     author_email='jonas@lophus.org',
     url='https://github.com/jonashaag/german-normalize',

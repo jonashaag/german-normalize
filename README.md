@@ -10,10 +10,14 @@ Example:
 from german_normalize import normalize
 
 
-normalize(u'Naïve Café üäöß ẞ')
-# => 'Naive Cafe ueaeoess SS'
+normalize(u'Naïve Café Äpfel ẞ')
+# => 'Naive Cafe AEpfel SS'
 
 
-normalize(u'Naïve Café üäöß ẞ', lexicographic=True)
-# => 'Naive Cafe uaoss SS'
+normalize(u'Naïve Café Äpfel ẞ', lexicographic=True)
+# => 'Naive Cafe Apfel SS'
+
+
+normalize(u'Naïve Café Äpfel ẞ', heuristic_case=True)
+# => 'Naive Cafe Aepfel SS'
 ```
