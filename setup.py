@@ -7,7 +7,7 @@ setup(
     author='Jonas Haag',
     author_email='jonas@lophus.org',
     url='https://github.com/jonashaag/german-normalize',
-    license='ISC',
+    license='WTFPL',
     description='Normalize ä ö ü ß -> a(e) o(e) u(e) ss (DIN 5007)',
     py_modules=['german_normalize'],
     classifiers=[
